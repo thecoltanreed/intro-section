@@ -145,7 +145,7 @@ p {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 10rem;
+    margin-top: 6rem;
    transform: translateX(15px);
 }
 
