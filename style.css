@@ -1,0 +1,423 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: var(--almostWhite);
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+:root {
+    --almostWhite: hsl(0, 0%, 96%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almosBlack: hsl(0, 0%, 8%);
+}
+
+h1 {
+    color: var(--almosBlack);
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-right: 2.8rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--mediumGray);
+
+    font-size: 1rem;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(6px);
+}
+
+
+.navbar-left-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.button-style {
+    border: 1px solid var(--mediumGray);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .8rem;
+    padding-top: .8rem;
+    border-radius: .7rem;
+    text-align: center;
+    transition: all .25s ease-in;
+}
+
+.learn {
+    border: 1px solid var(--mediumGray);
+    background-color: var(--almosBlack);
+    color: var(--almostWhite);
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1em;
+    padding-top: 1rem;
+    border-radius: .7rem;
+    margin-left: 2rem;
+    transition: all .2s ease-in;
+}
+.learn:hover {
+    background-color: var(--almostWhite);
+}
+
+.button-style:hover {
+    border-color: var(--almosBlack);
+    color: var(--almosBlack);
+}
+
+a {
+    text-decoration: none;
+    color: var(--mediumGray)
+}
+a:hover{
+    color: var(--almosBlack)
+}
+
+li {
+    list-style-type: none;
+    margin-left: 1.2rem;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-picture{
+    display: flex;
+
+    height: 72vh;
+    margin-top: 3rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
+}
+
+.middle-text-area {
+    padding-left: 7rem;
+}
+
+.middle-header {
+    margin-top: 12rem;
+    font-size: 6rem;
+    white-space: pre;
+}
+
+p {
+    color: var(--mediumGray);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7em; 
+}
+
+.middle-bottom-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+   transform: translateX(15px);
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-picture {
+    display: none;
+}
+
+.drop-down-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 3px 2px 2px rgb(235, 235, 235);
+    border-radius: 10px;
+
+
+    padding: .6rem 1.4rem .6rem 0;
+    margin-top: .4rem;
+    max-width: fit-content;
+
+
+
+    transform: translatex(8rem);
+    position: fixed;
+   
+}
+
+.features-li {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    padding-left: 0rem;
+    transition: all .25s ease-in-out;
+}
+
+.drop-down-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 3px 2px 2px rgb(235, 235, 235);
+    border-radius: 10px;
+
+
+    padding: .6rem 1.4rem .6rem 0;
+    margin-top: .4rem;
+    max-width: fit-content;
+
+
+
+    transform: translatex(16rem);
+    position: fixed;
+}
+
+.company-li {
+    margin-top: .8rem;
+    margin-bottom: .4rem;
+}
+
+
+
+
+.hamburger-menu-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100vh;
+   
+}
+
+.closed {
+    transform: translateX(100rem);
+    transition: all .25s ease-in;
+}
+
+.close-menu {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 3.2rem;
+    margin-left:auto;
+  
+}
+
+.hamburger-nav {
+    margin-top: 2rem;
+}
+
+.hamburger-li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hamburger-nav-login {
+    margin-top: 1rem;
+    margin-right: 8rem;
+    text-align: center;
+}
+.hamburger-nav-login, li {
+    margin-top: 1rem;
+}
+
+#background {
+    background-color: rgba(0, 0, 0, 0.67);
+    position: fixed;
+    height: 100%;
+    width: 300px;
+
+    top: 0;
+    right: 300px;
+    bottom: 0;
+}
+
+.features-hamburger {
+    padding-left: 1.5rem;
+}
+
+.company-hamburger {
+    padding-left: 1.5rem;
+}
+
+.hide {
+    display: none;
+
+    
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .middle-bottom-text {
+        margin-top: 4rem;
+    
+    }
+    .middle-picture{
+        margin-right: 8rem;
+    }
+
+    .middle-header {
+        white-space:unset;
+    }
+
+  }
+
+@media only screen and (max-width: 1370px) {
+    .middle-header {
+        margin-top: 7rem;
+    }
+    
+    .middle {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .middle-text-area{
+        padding: 0;
+    }
+
+    .middle-picture{
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .middle-text-area{
+        padding: 0;
+    }
+
+    .middle-bottom-text {
+        margin-top: 10rem;
+    }
+
+    .middle-picture{
+        margin-top: 2rem;
+        height: 50vh;
+    }
+
+    .middle-header {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: rem;
+    }
+
+    .learn {
+        font-size: .8rem;
+    }
+
+    .middle {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .nav-top-li {
+        display: none;
+    }
+
+    .navbar-right {
+        display: none;
+
+    }
+
+    .hamburger {
+        display: initial;
+        padding-right: 3rem;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .middle-header {
+        font-size: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .middle-picture-desktop {
+        display: none;
+    }
+
+    .mobile-picture {
+        display: block;
+        max-width: 380px;
+        height: auto;
+        width: auto;
+        margin-top: -3rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: .7rem;
+        padding-right: .7rem;
+    
+    }
+
+    h1 {
+        text-align: center;
+       
+    }
+
+    p {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: -2rem;
+
+    }
+
+    .learn {
+        display: flex;
+        justify-content: center;
+        width: 114px;
+        margin:auto;
+    }
+
+    .middle-bottom-text {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+
+}
